@@ -8,6 +8,7 @@ I uploaded the images built with the `Dockerfile`s of this Git repository to the
 
 - [RabbitMQ Windows Repo](https://hub.docker.com/r/rkttu/rabbitmq-windows)
 - [Redis Windows Repo](https://hub.docker.com/r/rkttu/redis-windows)
+- [Chocolatey Windows Repo](https://hub.docker.com/r/rkttu/chocolatey)
 - [(Temporary) PowerShell 6.1.0 Windows Nano Server Repo](https://hub.docker.com/r/rkttu/pwsh)
 
 ## Available docker images
@@ -70,3 +71,11 @@ Select the version of the tag that matches your Docker host operating system to 
   - `rkttu/redis-windows:2.8-1803`
 - **Windows-Server 2019 (1809)**
   - `rkttu/redis-windows:2.8-1809`
+
+### Chocolatey
+
+- **Windows-Server 2019 (1809) Core**
+  - `rkttu/chocolatey:servercore-1809`
+  - `rkttu/chocolatey:servercore-ltsc2019`
+- **Windows Full (1809)**
+  - `rkttu/chocolatey:full-1809`
