@@ -7,7 +7,8 @@ Repository containing Redis and RabbitMQ docker samples with Latest Windows Serv
 I uploaded the images built with the `Dockerfile`s of this Git repository to the Docker Hub repository below.
 
 - [RabbitMQ Windows Repo](https://hub.docker.com/r/rkttu/rabbitmq-windows)
-- [Redis Windows Repo](https://hub.docker.com/r/rkttu/redis-windows/)
+- [Redis Windows Repo](https://hub.docker.com/r/rkttu/redis-windows)
+- [(Temporary) PowerShell 6.1.0 Windows Nano Server Repo](https://hub.docker.com/r/rkttu/pwsh)
 
 ## Available docker images
 
@@ -21,6 +22,9 @@ Select the version of the tag that matches your Docker host operating system to 
   - `rkttu/rabbitmq-windows:3.6.12-1709`
 - **Windows Server 1803**
   - `rkttu/rabbitmq-windows:3.6.12-1803`
+- **Windows Server 2019 (1809)**
+  - `rkttu/rabbitmq-windows:3.6.12-ltsc2019`
+  - `rkttu/rabbitmq-windows:3.6.12-1809`
 
 ### RabbitMQ 3.6.9
 
@@ -30,6 +34,9 @@ Select the version of the tag that matches your Docker host operating system to 
   - `rkttu/rabbitmq-windows:3.6.9-1709`
 - **Windows Server 1803**
   - `rkttu/rabbitmq-windows:3.6.9-1803`
+- **Windows Server 2019 (1809)**
+  - `rkttu/rabbitmq-windows:3.6.9-2019`
+  - `rkttu/rabbitmq-windows:3.6.9-1809`
 
 ### Redis 3.2
 
@@ -39,6 +46,8 @@ Select the version of the tag that matches your Docker host operating system to 
   - `rkttu/redis-windows:3.2-1709`
 - **Windows Server 1803**
   - `rkttu/redis-windows:3.2-1803`
+- **Windows Server 2019 (1809)**
+  - `rkttu/redis-windows:3.2-1809`
 
 ### Redis 3.0
 
@@ -48,6 +57,8 @@ Select the version of the tag that matches your Docker host operating system to 
   - `rkttu/redis-windows:3.0-1709`
 - **Windows Server 1803**
   - `rkttu/redis-windows:3.0-1803`
+- **Windows Server 2019 (1809)**
+  - `rkttu/redis-windows:3.0-1809`
 
 ### Redis 2.8
 
@@ -57,3 +68,5 @@ Select the version of the tag that matches your Docker host operating system to 
   - `rkttu/redis-windows:2.8-1709`
 - **Windows-Server 1803**
   - `rkttu/redis-windows:2.8-1803`
+- **Windows-Server 2019 (1809)**
+  - `rkttu/redis-windows:2.8-1809`
