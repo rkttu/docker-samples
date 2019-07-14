@@ -1,6 +1,6 @@
-FROM microsoft/windowsservercore:ltsc2016
+FROM mcr.microsoft.com/windows/servercore:1903
 
-LABEL Description="RabbitMQ" Vendor="Pivotal" Version="3.6.12" OSVersion="ltsc2016" SKU="core"
+LABEL Description="RabbitMQ" Vendor="Pivotal" Version="3.6.12" OSVersion="1903" SKU="core"
 
 # ERLANG_HOME: erlang will install to this location and rabbitmq will use this environment variable to locate it
 # RABBITMQ_VERSION: rabbitmq version used in download url and to rename folder extracted from zip file
