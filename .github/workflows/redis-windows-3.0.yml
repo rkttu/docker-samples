@@ -1,0 +1,79 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build-redis:
+    runs-on: [self-hosted, windows, x64]
+    env:
+      working-directory: .\redis\windows
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.1.0
+        
+      - name: Docker Login
+        uses: Azure/docker-login@v1
+        with:
+          username: rkttu
+          password: ${{ secrets.GITHUBKEY }}
+          login-server: https://index.docker.io/v1/
+
+      - name: Build the Docker image for 3.0-sac2016
+        shell: powershell
+        env:
+          tag: 3.0-sac2016
+        working-directory: ${{env.working-directory}}/${{env.tag}}
+        run: |
+          docker build . --isolation=hyperv --tag "rkttu/redis-windows:${env:tag}";
+          docker push "rkttu/redis-windows:${env:tag}";
+
+      - name: Build the Docker image for 3.0-1709
+        shell: powershell
+        env:
+          tag: 3.0-1709
+        working-directory: ${{env.working-directory}}/${{env.tag}}
+        run: |
+          docker build . --isolation=hyperv --tag "rkttu/redis-windows:${env:tag}";
+          docker push "rkttu/redis-windows:${env:tag}";
+
+      - name: Build the Docker image for 3.0-1803
+        shell: powershell
+        env:
+          tag: 3.0-1803
+        working-directory: ${{env.working-directory}}/${{env.tag}}
+        run: |
+          docker build . --isolation=hyperv --tag "rkttu/redis-windows:${env:tag}";
+          docker push "rkttu/redis-windows:${env:tag}";
+
+      - name: Build the Docker image for 3.0-1809
+        shell: powershell
+        env:
+          tag: 3.0-1809
+        working-directory: ${{env.working-directory}}/${{env.tag}}
+        run: |
+          docker build . --isolation=hyperv --tag "rkttu/redis-windows:${env:tag}";
+          docker push "rkttu/redis-windows:${env:tag}";
+
+      - name: Build the Docker image for 3.0-1903
+        shell: powershell
+        env:
+          tag: 3.0-1903
+        working-directory: ${{env.working-directory}}/${{env.tag}}
+        run: |
+          docker build . --isolation=hyperv --tag "rkttu/redis-windows:${env:tag}";
+          docker push "rkttu/redis-windows:${env:tag}";
+
+      - name: Build the Docker image for 3.0-1909
+        shell: powershell
+        env:
+          tag: 3.0-1909
+        working-directory: ${{env.working-directory}}/${{env.tag}}
+        run: |
+          docker build . --isolation=hyperv --tag "rkttu/redis-windows:${env:tag}";
+          docker push "rkttu/redis-windows:${env:tag}";
