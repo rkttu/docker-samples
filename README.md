@@ -1,5 +1,7 @@
 # docker-samples (with Latest Windows Server/PowerShell support)
 
+![Docker Image CI](https://github.com/rkttu/docker-samples/workflows/Docker%20Image%20CI/badge.svg)
+
 Repository containing Redis and RabbitMQ docker samples with Latest Windows Server/PowerShell support. This Git repository is a forked version of [`micdenny/docker-samples`](https://github.com/micdenny/docker-samples) repository.
 
 ## Docker Hub URL
