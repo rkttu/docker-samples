@@ -32,21 +32,3 @@ jobs:
         run: |
           docker build . --isolation=hyperv --tag "rkttu/pwsh:${env:tag}";
           docker push "rkttu/pwsh:${env:tag}";
-
-      - name: Build the PowerShell Core for 6.1.0-1903
-        shell: powershell
-        env:
-          tag: 6.1.0-nanoserver-1903
-        working-directory: ${{env.working-directory}}/${{env.tag}}
-        run: |
-          docker build . --isolation=hyperv --tag "rkttu/pwsh:${env:tag}";
-          docker push "rkttu/pwsh:${env:tag}";
-
-      - name: Build the PowerShell Core for 6.1.0-1909
-        shell: powershell
-        env:
-          tag: 6.1.0-nanoserver-1909
-        working-directory: ${{env.working-directory}}/${{env.tag}}
-        run: |
-          docker build . --isolation=hyperv --tag "rkttu/pwsh:${env:tag}";
-          docker push "rkttu/pwsh:${env:tag}";
